@@ -3,3 +3,4 @@
 hn, hr, br, p, pre, blockquote<br>
 q, strong, b, em, i, mark, span<br>
 ul, ol, made profile, table
+caption, figurecaption, thead, tbody, tfoot, img, a
