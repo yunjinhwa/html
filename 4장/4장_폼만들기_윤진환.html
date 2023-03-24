@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4장 폼만들기  - 윤진환</title>
+    </head>
+    <body>
+        <h1>사용자 입력을 위한 폼</h1>
+        <form name="myForm" method="get" action="result.html"> <!--두개의 글자가 합쳐져서 쓰일때는 두번째 단어 첫 알파벳 대문자 사용-->
+            <fieldset>
+                <legend>필수 입력</legend>
+                [이름] : <input type="text" name="user_name" id="user_name" placeholder="이름을 입력하세요" autofocus required>
+                <br>
+                <label for="user_pwd">[비밀번호] : </label>
+                <input type="password" name="user_pwd" id="user_pwd" maxlength="12">
+            </fieldset>
+
+
+
+            <br><br>
+            <input type="submit" value="전송">
+            <input type="reset" value="다시입력">
+        </form>
+    </body>
+</html>
