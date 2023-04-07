@@ -7,9 +7,17 @@
         <title>컴퓨터공학부 - 윤진환</title>
 
         <style>
+            body{
+                /*background-color: lavender;*/
+                background-image: url(images/workplace.jpg); /*배경에 이미지 넣을경우 url필수**/
+                background-repeat: no-repeat; /*배경이미지 반복안함*/
+                background-attachment: fixed; /*배경이미지 고정*/
+                background-position: center;
+                background-size: cover;
+            }
             /*전체 콘텐츠를 감싸는 div*/
             #container {
-                background-color: lavender;
+                /*background-color: lavender;*/
                 width: 1000px; /*너비 지정*/
                 margin: 0 auto; /*가로로 중앙에 배치*/
                 padding: 10px; /*테두리와 내용사이의 안쪽 여백*/
@@ -20,7 +28,7 @@
             #main {
                 width: 1000px;
                 border: 1px solid #ccc; /*테두리 지정*/
-                
+                background-color: rgba(189, 131, 255, 0.842);
 
             }
 
@@ -36,6 +44,50 @@
                 margin: 0px; /*바깥쪽 간격*/
 
             }
+            h2{
+                color: rgb(111, 135, 255);
+                font-size: 1.8em; /*em, ex, px, pt 사용 1em은 16px*/
+                text-align: center; /* 가운데 정렬 */
+            }
+
+            p{
+                font-size: 1.1em;
+                font-weight: bold; /*글자 굵게*/
+                line-height: 1.7em;
+                text-align: center;
+            }
+
+            ul{
+                font-size: 1.2em;
+                line-height: 1.7em;
+                font-weight: bold;
+                list-style-type: none; /*순서 없는 목록 만들기*/
+                color: rgb(85, 113, 255);
+            }
+
+            ol{
+                font-size: 0.9em;
+                font-weight: bold;
+                line-height: 2em;
+                color: black;
+            }
+
+            .info{ /*클래스 이름이 info인 곳에 디자인 적용*/
+                text-align: justify; /* 양쪽정렬 */
+                padding: 20px;
+                background-color: rgba(215, 197, 254, 0.5);
+            }
+
+            .point{
+                color: rgb(61, 27, 255);
+            }
+
+            .mini_text{
+                font-size: 0.8em;
+                padding: 20px;
+
+            }
+
 
         </style>
 
@@ -52,13 +104,13 @@
                 <h1>컴퓨터공학부</h1>
 
                 <h2>학과 소개</h2>
-                <p>
+                <p class="info">
                     본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
-                    2023년 현재까지 34년 동안 2천여 명의 졸업생을 배출하였습니다. <br> 
+                    2023년 현재까지 34년동안 <br> 2천여 명의 졸업생을 배출하였습니다. <br> 
                     졸업생들은 우리나라 최고의 IT기업에서부터 소프트웨어 전문개발업체, 기업체, 금융기업, 공공기관 
-                    그리고 대학원으로 진출하였습니다. <br>
+                    그리고 대학원으로 <br> 진출하였습니다. <br>
                     본 학부는 최근 4차 산업혁명이 요구하는 핵심기술을 개발할 수 있는 전문 인재 양성을 위하여 
-                    전 교수들이 컴퓨터 소프트웨어 교육에 전념하고 있으며, 산업체와 협력을 통하여 소프트웨어 실무 전문 인력 양성에 
+                    전 교수들이 컴퓨터 <br> 소프트웨어 교육에 전념하고 있으며, 산업체와 협력을 통하여 소프트웨어 실무 전문 인력 양성에 
                     최선을 다하고 있습니다. <br>
                 
                 </p>
@@ -67,7 +119,7 @@
                 <h2>컴퓨터공학 전공</h2>
                 <p>
                     컴퓨터공학의 전반적인 교과목을 학습하여 다양한 IT분야로 진출할 수 있는 기본 역량을 배양하고, <br>
-                    사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능 등 고급 IT기술에 대한 심화 학습을 통해 <br>
+                    <span class="point">사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능</span> 등 고급 IT기술에 대한 심화 학습을 통해 <br>
                     취업 역량을 강화하여 현장 밀착형 IT 전문가를 양성하는 전공 <br>
                 </p>
                 <hr>
@@ -75,7 +127,7 @@
                 <h2>메타버스 전공</h2>
                 <p>
                     프로그램 코딩 주제의 기초 교육과정과 메타버스 콘텐츠 제작 주제의 심화 교육과정을 통해 <br>
-                    메타버스 및 게임 등 관련 분야에서 필요로 하는 코딩 역량과 콘텐츠 제작 역량을 <br>
+                    <span class="point">메타버스</span> 및 <span class="point">게임</span> 등 관련 분야에서 필요로 하는 코딩 역량과 콘텐츠 제작 역량을 <br>
                     겸비한 창의적인 인력을 양성하는 전공 <br>
                 </p>
                 <hr>
@@ -98,7 +150,7 @@
                 <hr>
 
                 <!--주소 구역-->
-                <p>
+                <p class="mini_text">
                     (우) 46958 부산광역시 사상구 괘법동 신라대학교 국제교육관 440-1호 <br>
                     TEL : 051-999-5653,5497 FAX : 051-999-5160	
                 </p>
