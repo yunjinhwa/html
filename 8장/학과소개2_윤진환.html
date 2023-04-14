@@ -8,23 +8,58 @@
 
         <link rel="stylesheet" type="text/css" href="layout.css">
 
+        <style>
+            article {
+                /* background-color: red; */
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                margin: 20px 0px 20px 0px;
+                padding: 20px;
+            }
+            #com1 {
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+
+            #com2 {
+                border: 3px dotted green; /*테두리만들기*/
+                border-radius: 20px; /*사각형박스 끄트머리 기울기 조정 */
+            }
+
+            #com3 {
+                border: 3px double orange;
+                border-top-left-radius: 30px; /*사각형박스 끄트머리 기울기 조정 (모서리 위치 지정) */
+                border-bottom-left-radius: 30px;
+            }
+
+            .red_point {
+                font-weight: bold;
+                color: skyblue;
+            }
+
+        </style>
+
+        
+
+
     </head>
     <body>
         <header> <!--로고나 메뉴 영역-->
             <h1>컴퓨터공학부</h1>
             <nav> <!--메뉴-->
                 <ul>
-                    <li><a href="">학부소개</a></li>
-                    <li><a href="">컴퓨터공학전공</a></li>
-                    <li><a href="">메타버스전공</a></li>
-                    <li><a href="">교육 목표</a></li>
+                    <li><a href="#com4">교육 목표</a></li>
+                    <li><a href="#com3">메타버스전공</a></li>
+                    <li><a href="#com2">컴퓨터공학전공</a></li>
+                    <li><a href="#com1">학부소개</a></li>
                 </ul>
             </nav>
 
         </header>
 
         <section> <!--학부 소개 메인 영역-->
-            <article> <!--학부소개 콘텐츠 영역-->
+            <article id="com1"> <!--학부소개 콘텐츠 영역-->
                 <h2>학부소개</h2>
                 <p>
                     본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
@@ -37,12 +72,14 @@
                 </p>
 
             </article>
-            <article> <!--컴퓨터공학전공 소개 콘텐츠 영역-->
+            <article id="com2"> <!--컴퓨터공학전공 소개 콘텐츠 영역-->
                 <h2>컴퓨터공학전공</h2>
                 <h3>소개</h3>
-                컴퓨터공학의 전반적인 교과목을 학습하여 다양한 IT분야로 진출할 수 있는 기본 역량을 배양하고,
-                <span class="red_point">사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능</span> 등 고급 IT기술에 대한 심화 학습을 통해
-                취업 역량을 강화하여 현장 밀착형 IT 전문가를 양성하는 전공					
+                <p>
+                    컴퓨터공학의 전반적인 교과목을 학습하여 다양한 IT분야로 진출할 수 있는 기본 역량을 배양하고,
+                    <span class="red_point">사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능</span> 등 고급 IT기술에 대한 심화 학습을 통해
+                    취업 역량을 강화하여 현장 밀착형 IT 전문가를 양성하는 전공					
+                </p>
         
                 <h3>교육과정</h3>
                 <dl>
@@ -56,7 +93,7 @@
                     
 
             </article>
-            <article> <!--메타버스전공 소개 콘텐츠 영역-->
+            <article id="com3"> <!--메타버스전공 소개 콘텐츠 영역-->
                 <h2>메타버스전공</h2>
                 <h3>소개</h3>
                 <p>
@@ -76,7 +113,7 @@
         
 
             </article>
-            <article> <!--교육 목표 콘텐츠 영역-->
+            <article id="com4"> <!--교육 목표 콘텐츠 영역-->
                 <h2>교육 목표</h2>
                 <p>
                     <ul>
