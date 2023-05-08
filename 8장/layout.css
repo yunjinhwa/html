@@ -24,14 +24,14 @@ h1 {
 
 header h1 { /*header 의 자손인 h1 태그에 적용, 띄워쓰기는 조상과 자손의 관계에서 사용, 부모와 자식의 관계에서는 > 사용*/
     color: black;
-    width: 40% ;
+    width: 30% ;
     float: left;
 
 }
 
 header > nav { /*header 의 자식인 nav에 적용*/
     /* background-color: aqua; */
-    width: 60% ; /*길이는 전체의 60%가 아닌 nav의 부모인 header의 영역의 60% 적용*/
+    width: 70% ; /*길이는 전체의 60%가 아닌 nav의 부모인 header의 영역의 60% 적용*/
     float: right;
 
 }

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>블록 레벨 요소와 인라인 레벨 요소 - 윤진환</title>
+
+        <style>
+            /* 컨텐츠 크기 알아보기 */
+            .content {
+                width: 100px;
+                height: 100px;
+                margin: 30px;
+                padding: 10px;
+                border: 5px solid gray;
+            }
+
+            /*이미지 블록 요소로 정리*/
+            #block img{
+                display: block;
+                margin: 10px;
+            }
+
+            /* 메뉴(리스트) 배치 방법 */
+            #list li {
+                background-color: aquamarine;
+                margin: 10px;
+                width: 150px;
+                height: 50px;
+                text-align: center;
+                /* 기본이 block 요소이다. 가로, 세로 길이 설정 가능 */
+            }
+
+            #inline li {
+                background-color: lemonchiffon;
+                margin: 10px;
+                display: inline;
+                width: 150px;
+                height: 50px;
+                /* inline 요소는 가로 정렬이다. 가로, 세로 길이 설정이 불가능 */
+            }
+
+            #inlineblock li {
+                background-color: pink;
+                margin: 10px;
+                display: inline-block;
+                width: 150px;
+                height: 50px;
+                text-align: center;
+                /* inline-block 요소는 가로정렬이고, 가로, 세로 길이 설정 가능 */
+            }
+
+            .overlap {
+                width: 100px;
+                height: 100px;
+                margin: 30px;
+                padding: 10px;
+                border: 5px solid black;
+                display: inline-block;
+            }
+
+            .box1, .box2 {
+                width: 300px;
+                height: 150px;
+                margin: 30px;
+                padding: 10px;
+                border: 5px solid black;
+            }
+
+            .box1 {
+                box-sizing: content-box;
+            }
+
+            .box2 {
+                box-sizing: border-box;
+            }
+
+        </style>
+
+
+
+
+    </head>
+    <body>
+        <h1>컨텐츠 크기</h1>
+        <div class="content" style="background-color: aquamarine;">
+
+        </div>
+
+        <div class="content" style="background-color: lemonchiffon;">
+
+        </div>
+
+        <div class="content" style="background-color: pink;">
+
+        </div>
+
+        <hr>
+
+        <h1>이미지 인라인 요소로 화면 배치</h1>
+        <div>
+            <img src="images/pic1.jpg">
+            <img src="images/pic2.jpg">
+            <img src="images/pic3.jpg">
+        </div>
+
+        <h1>이미지 블록 요소로 화면 배치</h1>
+        <div id="block">
+            <img src="images/pic1.jpg">
+            <img src="images/pic2.jpg">
+            <img src="images/pic3.jpg">
+        </div>
+
+        <hr>
+
+        <h1>메뉴(리스트) 배치(기본 블록요소)</h1>
+        <ul id="list">
+            <li>학과 소개</li>
+            <li>컴퓨터공학소개</li>
+            <li>메타버스전공</li>
+            <li>교육목표</li>
+            <li>주요 교과목</li>
+        </ul>
+        
+        <h1>메뉴(리스트) 인라인 배치</h1>
+        <ul id="inline">
+            <li>학과 소개</li>
+            <li>컴퓨터공학소개</li>
+            <li>메타버스전공</li>
+            <li>교육목표</li>
+            <li>주요 교과목</li>
+        </ul>
+
+        <h1>메뉴(리스트) 인라인-블록 배치</h1>
+        <ul id="inlineblock">
+            <li>학과 소개</li>
+            <li>컴퓨터공학소개</li>
+            <li>메타버스전공</li>
+            <li>교육목표</li>
+            <li>주요 교과목</li>
+        </ul>
+
+        <hr>
+
+        <h1>컨텐츠 마진 중첩</h1>
+        <div class="content" style="background-color: aquamarine;">
+
+        </div>
+
+        <div class="content" style="background-color: lemonchiffon;">
+
+        </div>
+
+        <div class="overlap" style="background-color: pink;">
+
+        </div>
+
+        <div class="overlap" style="background-color: lightseagreen;">
+
+        </div>
+
+        <hr>
+
+        <h1>박스 사이즈 정하기</h1>
+        <div class="box1" style="background-color: lemonchiffon;">content-box</div>
+        <div class="box2" style="background-color: lightseagreen;">border-box</div>
+
+
+    </body>
+</html>
