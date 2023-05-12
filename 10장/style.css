@@ -1,0 +1,82 @@
+/* 별은 태그마다 적용 */
+* {
+    font-family: "맑은 고딕";
+    margin: 5px;
+}
+
+header, footer {
+    padding: 20px;
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+nav {
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    width: 100px; /*a태그는 인라인 태그*/
+    height: 30px;
+    padding: 10px;
+    /* background-color: red; */
+    display: inline-block;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+a:hover, a:active {
+    color: white;
+    background-color: skyblue;
+    text-decoration: underline;
+}
+
+section {
+    background-color: lemonchiffon;
+    border: 2px solid brown;
+    height: 200px;
+    width: 48%;
+    float: left;
+}
+
+#s1 > h1 {
+    background-color: lightseagreen;
+    padding: 10px;
+}
+
+#s2 > h1 {
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+#s3 > h1 {
+    background-color: lightcyan;
+    padding: 10px;
+}
+
+#s4 > h1 {
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+#s5 > h1 {
+    background-color: lightsalmon;
+    padding: 10px;
+}
+
+#s6 > h1 {
+    background-color: lightslategray;
+    padding: 10px;
+}
+
+footer {
+    clear: both;
+}
+
+
