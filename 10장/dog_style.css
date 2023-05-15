@@ -1,0 +1,96 @@
+body {
+    font-family: "맑은 고딕", "";
+}
+
+header {
+    background-color: rgb(190, 255, 233);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: 80px;
+}
+
+header h1 {
+    float: left;
+    padding-left: 20px;
+}
+
+header nav {
+    float: right;
+    padding-top: 13px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+article {
+    clear: both;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    padding: 9px;
+}
+
+article section {
+    columns: 3;
+    column-rule: 2px dotted blue;
+    padding: 10px;
+}
+
+section h3 {
+    break-before: column;
+    padding-left: 15px;
+}
+
+section dl {
+    margin: 10px;
+}
+
+section dt {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+section dt, section dd {
+    line-height: 30px;
+}
+
+aside {
+    clear: both;
+    width: 80%;
+    margin:0 auto; /* margin-left: auto;, margin-right: auto;랑 같은 효과*/
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+aside li {
+    line-height: 30px;
+}
+
+aside h3, aside ul {
+    margin-left: 15px;
+}
+
+footer {
+    clear: both;
+    width: 80%;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
