@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>속성선택자1 - 윤진환</title>
+
+        <style>
+            ul {
+                list-style: none;
+            }
+
+            li {
+                display: inline-block;
+                width: 120px;
+                margin: 10px;
+            }
+
+            li > a {
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                padding: 5px 20px;
+            }
+
+            .flat {
+                background-color: blue;
+                color: white;
+            }
+
+            [class ~="button"] { /*~=는 class라는 속성에 button이 포함되있으면 적용*/
+                border: 2px solid black;
+                box-shadow: rgba(0,0,0,0.4) 5px 5px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">메뉴 1</a></li>
+            <li><a href="#">메뉴 2</a></li>
+            <li><a href="#" class="button">메뉴 3</a></li>
+            <li><a href="#" class="flat button">메뉴 4</a></li>
+        </ul>
+    </body>
+</html>
