@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>속성선택자3 - 윤진환</title>
+        <title>속성선택자6 - 윤진환</title>
 
         <style>
             ul {
@@ -24,14 +24,14 @@
                 padding: 5px 20px;
             }
 
-            .flat {
-                background-color: blue;
-                color: white;
+            a[href $= "hwp"] {
+                background: url(image/hwp_icon.gif) no-repeat left center;
+                padding: 5px 25px;
             }
 
-            [class ~="button"] { /*~=는 class라는 속성에 button이 포함되있으면 적용*/
-                border: 2px solid black;
-                box-shadow: rgba(0,0,0,0.4) 5px 5px;
+            a[href $= "xlsx"] {
+                background: url(image/excel_icon.gif) no-repeat left center;
+                padding: 5px 25px;
             }
 
         </style>
@@ -39,10 +39,9 @@
     </head>
     <body>
         <ul>
-            <li><a href="#">메뉴 1</a></li>
-            <li><a href="#">메뉴 2</a></li>
-            <li><a href="#" class="button">메뉴 3</a></li>
-            <li><a href="#" class="flat button">메뉴 4</a></li>
+            <h2>학과 소개 파일 다운로드</h2>
+            <li><a href="info.hwp">한글 파일</a></li>
+            <li><a href="info.xlsx">엑셀 파일</a></li>
         </ul>
     </body>
 </html>
