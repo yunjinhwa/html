@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>애니메이션 - 윤진환</title>
+
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine;
+                animation-name: change-bg;
+                animation-duration: 3s;
+            }
+
+            @keyframes change-bg {
+                from {
+                    background-color: aquamarine;
+                    border: 1px solid black;
+                }
+
+                to {
+                    background-color: antiquewhite;
+                    border: 2px solid brown;
+                    border-radius: 50%;
+                }
+            }
+
+            @-webkit-keyframes change-bg {
+                from {
+                    background-color: aquamarine;
+                    border: 1px solid black;
+                }
+
+                to {
+                    background-color: antiquewhite;
+                    border: 2px solid brown;
+                    border-radius: 50%;
+                }
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div>
+            
+        </div>
+    </body>
+</html>

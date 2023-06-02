@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>트랜지션3 - 윤진환</title>
+
+        <style>
+            #ex {
+                width: 500px;
+                height: 150px;
+                float: left;
+                margin: 0px auto;
+                padding: 20px;
+                border-radius: 30px;
+                border: 1px solid black;
+                position: relative;
+            }
+
+            #ex:hover div {
+                margin-left: 420px;
+                transform: rotate(720deg);
+            }
+
+            .box {
+                position: relative;
+                width: 60px;
+                height: 60px;
+                background-color: aliceblue;
+                margin-bottom: 10px;
+            }
+
+            #no-delay {
+                transition-duration: 3s;
+                border: 1px solid skyblue;
+            }
+
+            #delay {
+                transition-duration: 3s;
+                transition-delay: 1s;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="tr1" id="ex">
+            <div class="box" id="delay">
+                delay
+            </div>
+
+            <div class="box" id="no-delay">
+                no-delay
+            </div>
+        </div>
+
+    </body>
+</html>

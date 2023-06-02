@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>애니메이션4 - 윤진환</title>
+
+        <style>
+            #box1 {
+                height: 100px;
+                width: 100px;
+                margin-top: 50px;
+                margin-left: 100px;
+                padding: 20px;
+                animation-name: rotate;
+                animation-duration: 1.4s;
+                animation-direction: normal; /*기본값으로 돌아가기*/
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes rotate {
+                from {
+                    transform: perspective(140px) rotateX(0deg) rotateY(0deg);
+                    background-color: aliceblue;
+                }
+
+                50% {
+                    transform:rotateX(180deg) rotateY(0deg);
+                    background-color: lavenderblush;
+                }
+
+                to {
+                    transform:rotateX(180deg) rotateY(180deg);
+                    background-color: lavender;
+                }
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="box1">
+            
+        </div>
+
+    </body>
+</html>
